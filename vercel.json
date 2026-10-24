@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "git": {
+    "deploymentEnabled": false
+  },
+  "crons": [
+    {
+      "path": "/api/cron/source-watch",
+      "schedule": "17 */6 * * *"
+    },
+    {
+      "path": "/api/cron/health",
+      "schedule": "*/30 * * * *"
+    },
+    {
+      "path": "/api/cron/cleanup",
+      "schedule": "11 9 * * *"
+    }
+  ],
+  "buildCommand": "npm test && next build"
+}
