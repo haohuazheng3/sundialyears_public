@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+# next.js / build output
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+# env & secrets (never committed; prod uses Vercel env vars)
+.env*
+!.env.example
+# vercel
+.vercel
+# testing
+/coverage
+/test-results/
+/playwright-report/
+# runtime locks / temp / logs
+.flow/ops.lock
+.runner.lock
+.stamp-*
+logs/
+*.log
+.DS_Store
+*.pem
